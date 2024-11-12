@@ -1,11 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fruit Burst Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fruit Burst Website</title>
+  <!-- Tailwind and DaisyUI Connection -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tailwind custom Classes -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'primary-color': '#F85559',
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <!-- font awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- CSS Styles -->
+  <style>
+    .font-lato {
+      font-family: "Lato", serif;
+    }
+  </style>
 </head>
-<body>
-    
+
+<body class="font-lato m-0 p-0 box-border">
+  <header class="w-11/12 lg:w-3/4 mx-auto my-4 lg:my-14 text-black lg:text-white">
+    <!-- NavBar Starts -->
+    <nav class="bg-white lg:bg-primary-color rounded-full flex justify-center items-center h-20 lg:h-28 px-4 lg:px-10">
+      <div class="flex justify-between w-full">
+        <div class="navbar-part-one hidden lg:flex justify-center items-center gap-6 text-lg font-medium">
+          <a>Home</a>
+          <a>About Us</a>
+          <a>Shop</a>
+          <a>All Fruits</a>
+        </div>
+        <div class="navbar-part-two flex lg:hidden">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-7 " fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M4 6h16M4 12h16M4 18h7" />
+              </svg>
+            </div>
+            <ul tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-black font-bold">
+              <li><a>Home</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="navbar-part-three flex items-center justify-center gap-1 lg:gap-4">
+          <img src="./images/logo.png" alt="">
+          <h2 class="font-bold text-2xl lg:text-4xl">Fruit Burst</h2>
+        </div>
+        <div class="navbar-part-four hidden lg:flex bg-white rounded-full">
+          <div class="flex justify-between items-center relative lg:w-[300px]">
+            <input class="py-5 pl-7 rounded-full" type="text" name="" id="" placeholder="Search Here">
+            <img class="w-6 h-6 absolute right-6" src="./images/Search-icon.png" alt="">
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="w-11/12 lg:w-3/4 mx-auto"></section>
+  </main>
+  <footer></footer>
 </body>
+
 </html>
